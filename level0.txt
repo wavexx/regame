@@ -1,0 +1,65 @@
+# level title and text color
+title=FLTK Recycling Game!
+color=#FF0000
+
+# maximum speeds (in pixels/msec).
+grav=0.0002
+maxFallSpeed=0.2
+maxPlayerSpeed=0.3
+playerAccel=0.001
+
+# background
+w=640
+h=480
+back=back
+
+# msec beween objects/variance
+mms=3000
+mmd=2000
+
+# player position
+y=40
+
+# bottomlive where objects cannot be grabbed anymore
+baseline=40
+
+# topline where thrown object start to fall again
+topline=300
+
+# minimum speed required for object to fall (instead of bouncing)
+minSpeed=0.05
+
+# falling range
+fallx1=40
+fallx2=600
+
+# graphic prefixes
+cntsPrefix=trash
+objsPrefix=obj
+plyrPrefix=plyrn
+
+# number of player graphic animations and frames/msec
+plyrs=8
+plyrFpms=80
+
+# containers (x/y: location, ax/ay: grab zone)
+cnts=3
+cnt0x=80
+cnt0y=105
+cnt0ax1=18
+cnt0ay1=118
+cnt0ax2=131
+cnt1x=240
+cnt1y=107
+cnt1ax1=18
+cnt1ay1=118
+cnt1ax2=131
+cnt2x=400
+cnt2y=110
+cnt2ax1=18
+cnt2ay1=118
+cnt2ax2=131
+
+# shake duration and amplitude
+shakeLen=100
+shake=10

@@ -1,0 +1,64 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0108 
+header_name {.hh} 
+code_name {.cc}
+decl {\#include <FL/fl_ask.H>} {} 
+
+decl {\#include <stdio.h>} {} 
+
+decl {void submitScore(int score, const char* level, const char* name);} {public global
+} 
+
+decl {bool checkName(const char* name);} {public global
+} 
+
+class Score {open
+} {
+  decl {int score;} {}
+  Function {Score()} {open
+  } {
+    Fl_Window win {
+      label {Final Score} open
+      private xywh {339 224 312 185} type Double modal visible
+    } {
+      Fl_Box level {
+        label Level
+        xywh {10 10 295 25} align 20
+      }
+      Fl_Box box {
+        label 1111111111
+        private xywh {10 35 295 55} labelfont 1 labelsize 32
+      }
+      Fl_Input name {
+        label {Enter your name:}
+        private xywh {10 110 295 25} align 5
+      }
+      Fl_Return_Button {} {
+        label {Submit online}
+        callback {if(checkName(name->value()))
+  fl_message("The name is too short!");
+else
+{
+  submitScore(score, level->label(), name->value());
+  win->hide();
+}}
+        xywh {175 145 125 25}
+      }
+      Fl_Button {} {
+        label {Chicken out}
+        callback {win->hide();}
+        xywh {45 145 125 25}
+      }
+    }
+  }
+  Function {show(int score, const char* level)} {open
+  } {
+    code {this->score = score;
+char buf[32];
+snprintf(buf, sizeof(buf), "%d", score);
+this->level->copy_label(level);
+box->copy_label(buf);
+win->show();} {selected
+    }
+  }
+} 

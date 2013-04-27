@@ -1,0 +1,4 @@
+# regame looks for level0/1/2/3, etc,
+# but there's no concept of level ending yet.
+# when quitting the game, the next level is started
+level0=level0.txt
