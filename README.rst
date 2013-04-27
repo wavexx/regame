@@ -9,6 +9,10 @@ In order to build from source you'll need:
 Once you have those, just build with "make" and
 run the game with "./regame".
 
+Official web page at:
+
+  http://www.thregr.org/~wavexx/hacks/regame/
+
 Changing the level data and parameters should
 be easy! Just look at game.txt and level0.txt.
 
