@@ -14,7 +14,7 @@ Changing the level data and parameters should be easy! Just look at game.txt
 and level0.txt.
 
 If you want to contribute new levels, send suggestions or new graphics, mail
-the author at wavexx@users.sf.net.
+the author at wavexx@thregr.org.
 
 regame is distributed under GNU LGPL without ANY warranty.
 Read COPYING for details.
