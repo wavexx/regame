@@ -1,7 +1,7 @@
 FLTK Recycling game!
 --------------------
-http://www.thregr.org/~wavexx/hacks/regame/
-===========================================
+http://www.thregr.org/~wavexx/software/regame/
+==============================================
 
 In order to build from source you'll need:
 
